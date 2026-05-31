@@ -16,18 +16,18 @@ export default function Projects() {
   }, []);
 
   return (
-    <section className="py-24 px-8">
+    <section id="projects" className="py-24 px-8">
       <h2 className="text-4xl font-bold text-center text-cyan-400 mb-12">
-        GitHub Projects
-      </h2>
+      Featured Projects
+    </h2>
 
       <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {repos.slice(0, 6).map((repo) => (
           <div
             key={repo.id}
-            className="border border-cyan-400 rounded-xl p-6 hover:scale-105 transition"
+           className="border border-cyan-400 rounded-xl p-6 hover:scale-105 hover:shadow-[0_0_25px_rgba(34,211,238,0.5)] transition duration-300"
           >
-            <h3 className="text-2xl font-bold mb-4">
+            <h3 className="text-2xl font-bold mb-4 text-cyan-300">
               {repo.name}
             </h3>
 
